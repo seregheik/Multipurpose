@@ -5,7 +5,7 @@
   --foreground: #171717;
 }
 [data-theme="dark"] {
-  --background: #0a0a0a;
+  --background: #222222;
   --foreground: #ededed;
 }
 @font-face {
