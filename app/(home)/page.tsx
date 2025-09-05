@@ -105,7 +105,7 @@ export default function Home() {
             <div className="flex min-h-dvh items-center justify-center p-24">
                 <div className="text-center">
                     {/* Animated text with smooth transitions */}
-                    <div className={`text-4xl font-bold text-center text-black pb-8 transition-all duration-300 ease-in-out transform ${isTransitioning
+                    <div className={`text-4xl font-bold text-center  pb-8 transition-all duration-300 ease-in-out transform ${isTransitioning
                         ? 'opacity-0 translate-y-4 scale-95'
                         : 'opacity-100 translate-y-0 scale-100'
                         }`}>
@@ -176,7 +176,7 @@ export default function Home() {
                             title="Go Back"
                         >
                             <IoIosArrowBack className={`
-                                text-black text-4xl transition-transform duration-200 ease-in-out
+                                 text-4xl transition-transform duration-200 ease-in-out
                                 ${isTransitioning ? '-rotate-90' : 'group-hover:-translate-x-1'}
                             `} />
                         </button>
@@ -196,7 +196,7 @@ export default function Home() {
                             title={isLastStep ? "Start Quiz" : "Continue"}
                         >
                             <IoIosArrowForward className={`
-                                ${isLastStep ? 'text-white' : 'text-black '} text-4xl transition-transform duration-200 ease-in-out
+                                ${isLastStep ? 'text-white' : ' text-black'} text-4xl transition-transform duration-200 ease-in-out
                                 ${isTransitioning ? 'rotate-90' : 'group-hover:translate-x-1'}
                             `} />
                         </button>
