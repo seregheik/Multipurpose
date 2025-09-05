@@ -1,0 +1,1 @@
+export const introSetup = ["Welcome To Basic Quiz","Pick a Theme", "What is your name?", "Welcome"]
