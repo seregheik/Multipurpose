@@ -2,7 +2,9 @@ import React from 'react'
 
 const QuizDashboard = () => {
   return (
-    <div>QuizDashboard</div>
+    <div className='m-auto'>
+      Questions go here
+    </div>
   )
 }
 

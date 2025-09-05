@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
      <> 
     <Navbar/>
-    <main>
+    <main className="flex min-h-screen">
      {children}
     </main>
     </>
