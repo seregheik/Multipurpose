@@ -2,9 +2,7 @@ import apiClient from "../client/apiClient";
 export const endpoints = {
   getData: async (payload?: any) => {
     try {
-      const response = await apiClient.get("/default/returnYes", {
-        params: payload, // For GET requests with query parameters
-      });
+      const response = await apiClient.post("/default/getQuizes", payload);
       return response.data;
     } catch (error) {
       throw error;

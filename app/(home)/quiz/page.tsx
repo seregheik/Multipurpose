@@ -1,9 +1,10 @@
 import React from 'react'
+import Questions from '@/components/Questionaire/questions'
 
 const QuizDashboard = () => {
   return (
     <div className='m-auto'>
-      Questions go here
+      <Questions/>
     </div>
   )
 }

@@ -15,13 +15,13 @@ useEffect(() => {
   }
 }, [])
   return (
-    <nav className="py-4 fixed w-full top-0 shadow-md flex justify-between px-3">
+    <nav className="navbar">
       <Link href={"/quiz"} className="flex items-center gap-4">
         <PiBrainThin className="text-3xl lg:text-5xl" />
         <h1 className="text-lg lg:text-2xl font-bold">Quiz App</h1>
       </Link>
       <div className="flex items-center gap-4">
-        <div className="text-gray-800 hidden">{name}</div>
+        <div className="hidden md:block">{name}</div>
         {/* <Link href={"/quiz"} className="text-gray-800 hover:text-gray-600">Quiz</Link> */}
       </div>
       <ThemeToggle />

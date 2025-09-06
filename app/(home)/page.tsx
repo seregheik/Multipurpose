@@ -5,8 +5,7 @@ import { useState, useRef } from "react";
 import { introSetup } from "@/utils/data/introQuestions";
 import { PiBrainThin } from "react-icons/pi";
 import { useRouter } from 'next/navigation';
-
-import { useAppProvider } from "@/Context/basicProvider";
+import Cookies from "js-cookie"
 export default function Home() {
     const [text, setText] = useState(introSetup[0])
     const tracker = useRef(0)
@@ -43,6 +42,7 @@ export default function Home() {
                 break;
             case 3:
                 setLocalUserName()
+                Cookies.set("QizzAppName", name)
                 setDisplayField(false)
                 setDisplayGameType(true)
                 break;

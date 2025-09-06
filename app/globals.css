@@ -5,8 +5,13 @@
   --foreground: #171717;
 }
 [data-theme="dark"] {
-  --background: #181616;
+  --background: #111010;
   --foreground: #ededed;
+  @layer utilities {
+  .navbar {
+    @apply shadow-none border-b-[1px] border-gray-700
+  }
+}
 }
 @font-face {
   font-family: Roboto;
@@ -35,7 +40,7 @@ body {
   font-family: Roboto ,Arial, Helvetica, sans-serif;
 }
 @layer utilities {
-  .mainHeader {
-    @apply flex
+  .navbar {
+    @apply py-4 fixed w-full top-0 shadow-md flex justify-between px-3
   }
 }
