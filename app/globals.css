@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
 }
 [data-theme="dark"] {
   --background: #111010;
@@ -13,6 +14,9 @@
   }
 }
 }
+ .bg-adapt {
+    background-color: var(--background);
+  }
 @font-face {
   font-family: Roboto;
   /* font-style: normal; */
@@ -43,4 +47,5 @@ body {
   .navbar {
     @apply py-4 fixed w-full top-0 shadow-md flex justify-between px-3
   }
+ 
 }
