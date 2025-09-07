@@ -8,7 +8,7 @@ const QuizDashboard = () => {
 
   if (!mode) {
     return (
-      <div className='m-auto'>
+      <div className='m-auto -mt-28'>
       <div className='flex min-h-dvh items-center justify-center p-2'>
         <div className='text-center max-w-4xl w-full'>
           <div className='flex flex-col items-center justify-center'>
@@ -54,7 +54,7 @@ const QuizDashboard = () => {
 
   if (mode === 'Random 10') {
     return (
-      <div className='m-auto'>
+      <div className='m-auto w-full px-3'>
         <Questions setMode={setMode} quizMode="random10" maxQuestions={10} />
       </div>
     )

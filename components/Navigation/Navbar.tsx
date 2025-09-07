@@ -15,7 +15,7 @@ useEffect(() => {
   }
 }, [])
   return (
-    <nav className="navbar bg-adapt z-50">
+    <nav className="py-4 sticky w-full top-0 shadow-md flex justify-between px-3 bg-adapt z-50">
       <Link href={"/quiz"} className="flex items-center gap-4">
         <PiBrainThin className="text-3xl lg:text-5xl" />
         <h1 className="text-lg lg:text-2xl font-bold">Quiz App</h1>

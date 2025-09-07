@@ -408,10 +408,10 @@ const Questions = ({ setMode, quizMode = 'fullburst', maxQuestions }: QuestionsP
 
   return (
     <main className="relative">
-      <div className="flex min-h-dvh items-center justify-center p-2">
+      <div className="flex  items-center justify-center p-2">
         <div className="text-center max-w-4xl w-full">
           {/* Question Header with Brain Icon and Restart Button */}
-          <div className={`mb-8 transition-all duration-300 ease-in-out transform ${isTransitioning
+          <div className={`mb-8 transition-all w-full duration-300 ease-in-out transform ${isTransitioning
             ? 'opacity-0 translate-y-4 scale-95'
             : 'opacity-100 translate-y-0 scale-100'
             }`}>
@@ -419,16 +419,16 @@ const Questions = ({ setMode, quizMode = 'fullburst', maxQuestions }: QuestionsP
               {/* Score Tracker - Left Side */}
               <div className={`
                 absolute left-0 top-1/2 transform -translate-y-1/2
-                backdrop-blur-sm bg-white/10 border border-white/20 rounded-lg p-3
+                backdrop-blur-sm bg-white/10 border border-white/20 rounded-lg p-2 lg:p-3
                 transition-all duration-300 ease-in-out
                 ${isTransitioning ? 'opacity-50 scale-95' : 'opacity-100 scale-100'}
                 shadow-lg hover:shadow-xl hover:bg-white/15
               `}>
                 <div className="text-center">
-                  <div className="text-lg font-bold text-gray-700 mb-1">
+                  {/* <div className="text-lg font-bold text-gray-700 mb-1">
                     {score}/{totalQuestions}
-                  </div>
-                  <div className="text-xs text-gray-600 mb-1">Score</div>
+                  </div> */}
+                  {/* <div className="text-xs text-gray-600 mb-1">Score</div> */}
                   {totalQuestions > 0 && (
                     <div className={`
                       text-xs font-medium px-2 py-0.5 rounded-full
@@ -446,8 +446,8 @@ const Questions = ({ setMode, quizMode = 'fullburst', maxQuestions }: QuestionsP
               </div>
 
               {/* Center Content */}
-              <PiBrainThin className="text-6xl text-gray-600 mr-4" />
-              <div className="text-lg font-medium text-gray-500">
+              <PiBrainThin className="text-4xl lg:text-6xl text-gray-600 mr-4" />
+              <div className="lg:text-lg text-sm font-medium text-gray-500">
                 Question {number.current - 1}
                 <div className="text-sm text-gray-400">
                   {quizMode === 'random10' ? 'Random 10' : 'Full Burst'} Mode
@@ -572,7 +572,7 @@ const Questions = ({ setMode, quizMode = 'fullburst', maxQuestions }: QuestionsP
             </div>
 
             {/* Result Message */}
-            {showResult && (
+            {/* {showResult && (
               <div className={`mt-6 transition-all duration-500 ease-in-out transform ${showResult ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-4 scale-95'
                 }`}>
                 <div className={`backdrop-blur-sm rounded-lg p-4 border ${isCorrect
@@ -596,7 +596,7 @@ const Questions = ({ setMode, quizMode = 'fullburst', maxQuestions }: QuestionsP
                   </div>
                 </div>
               </div>
-            )}
+            )} */}
           </div>
 
           {/* Navigation Controls */}

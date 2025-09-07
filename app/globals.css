@@ -45,7 +45,7 @@ body {
 }
 @layer utilities {
   .navbar {
-    @apply py-4 fixed w-full top-0 shadow-md flex justify-between px-3
+    @apply py-4 sticky w-full top-0 shadow-md flex justify-between px-3
   }
  
 }

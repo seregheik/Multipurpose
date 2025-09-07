@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Roboto_Mono, Roboto } from "next/font/google";
+// import { Roboto_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 
-const robotoSans = Roboto({
-  variable: "--font-roboto-sans",
-  subsets: ["latin"],
-});
+// const robotoSans = Roboto({
+//   variable: "--font-roboto-sans",
+//   subsets: ["latin"],
+// });
 
-const robotoMono = Roboto_Mono({
-  variable: "--font-roboto-mono",
-  subsets: ["latin"],
-});
+// const robotoMono = Roboto_Mono({
+//   variable: "--font-roboto-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en-Us">
       <body
-        className={`${robotoSans.variable} ${robotoMono.variable} antialiased`} suppressHydrationWarning={true}
+        className={` antialiased`} suppressHydrationWarning={true}
       >
         {children}
       </body>
