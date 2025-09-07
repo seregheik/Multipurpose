@@ -31,7 +31,7 @@
   --font-mono: var(--font-roboto-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
    :root:not([data-theme]) {
     --background: #181616;
     --foreground: #ededed;

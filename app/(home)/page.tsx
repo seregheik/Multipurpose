@@ -6,6 +6,7 @@ import { introSetup } from "@/utils/data/introQuestions";
 import { PiBrainThin } from "react-icons/pi";
 import { useRouter } from 'next/navigation';
 import Cookies from "js-cookie"
+import { capitalizeNameAdvanced } from "@/components/functions";
 export default function Home() {
     const [text, setText] = useState(introSetup[0])
     const tracker = useRef(0)
@@ -24,7 +25,7 @@ export default function Home() {
 
     // Helper function to update display state based on current tracker value
     const updateDisplayState = () => {
-        setText(tracker.current < 3 ? introSetup[tracker.current] : introSetup[tracker.current] + " " + name)
+        setText(tracker.current < 3 ? introSetup[tracker.current] : introSetup[tracker.current] + " " + capitalizeNameAdvanced(name))
 
         switch (tracker.current) {
             case 0:
@@ -42,7 +43,7 @@ export default function Home() {
                 break;
             case 3:
                 setLocalUserName()
-                Cookies.set("QizzAppName", name)
+                Cookies.set("QizzAppName", capitalizeNameAdvanced(name))
                 setDisplayField(false)
                 setDisplayGameType(true)
                 break;
@@ -94,7 +95,7 @@ export default function Home() {
     }
 
     const setLocalUserName = () => {
-        localStorage.setItem("QizzAppName", name)
+        localStorage.setItem("QizzAppName", capitalizeNameAdvanced(name))
     }
 
     // Check if we're on the last step

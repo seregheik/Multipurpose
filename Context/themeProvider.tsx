@@ -21,7 +21,7 @@ interface ThemeProviderProps {
 }
 
 // Theme Provider Component
-export const ThemeProvider = ({ children, defaultTheme = 'dark' }: ThemeProviderProps) => {
+export const ThemeProvider = ({ children, defaultTheme = 'light' }: ThemeProviderProps) => {
     const [theme, setThemeState] = useState<Theme>(defaultTheme);
 
     // Initialize theme on mount
