@@ -18,7 +18,7 @@ const QuizDashboard = () => {
             <div className='flex flex-row items-center justify-center'>
               <div className='flex gap-6 flex-wrap items-center justify-center'>
                 {
-                  ['Random 10', 'Full Burst'].map((modeOption: string) => {
+                  ['Random 25', 'Full Burst'].map((modeOption: string) => {
                     return (
                       <button
                         key={modeOption}
@@ -35,7 +35,7 @@ const QuizDashboard = () => {
                         <div className="text-2xl font-bold mb-2">{modeOption}</div>
                         <div className="text-sm text-gray-600">
                           {modeOption === 'Random 10'
-                            ? 'Answer 10 random questions'
+                            ? 'Answer 25 random questions'
                             : 'Answer all available questions'
                           }
                         </div>
@@ -55,7 +55,7 @@ const QuizDashboard = () => {
   if (mode === 'Random 10') {
     return (
       <div className='m-auto w-full px-3'>
-        <Questions setMode={setMode} quizMode="random10" maxQuestions={10} />
+        <Questions setMode={setMode} quizMode="random10" maxQuestions={25} />
       </div>
     )
   }
