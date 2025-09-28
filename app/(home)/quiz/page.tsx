@@ -35,7 +35,7 @@ const QuizDashboard = () => {
                         <div className="text-2xl font-bold mb-2">{modeOption}</div>
                         <div className="text-sm text-gray-600">
                           {modeOption === 'Random 25'
-                            ? 'Answer 25 random questions'
+                            ? 'Answer 10 random questions'
                             : 'Answer all available questions'
                           }
                         </div>
@@ -52,7 +52,7 @@ const QuizDashboard = () => {
     )
   }
 
-  if (mode === 'Random 10') {
+  if (mode === 'Random 25') {
     return (
       <div className='m-auto w-full px-3'>
         <Questions setMode={setMode} quizMode="random10" maxQuestions={25} />

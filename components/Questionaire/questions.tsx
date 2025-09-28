@@ -450,7 +450,7 @@ const Questions = ({ setMode, quizMode = 'fullburst', maxQuestions }: QuestionsP
               <div className="lg:text-lg text-sm font-medium text-gray-500">
                 Question {number.current - 1}
                 <div className="text-sm text-gray-400">
-                  {quizMode === 'random10' ? 'Random 10' : 'Full Burst'} Mode
+                  {quizMode === 'random10' ? 'Random 25' : 'Full Burst'} Mode
                 </div>
               </div>
 
